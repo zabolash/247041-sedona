@@ -1,0 +1,35 @@
+body {
+    font-size: 1em;
+}
+
+.main-img {
+    background-image: url("img/background.jpg");
+    width: 1200px;
+    height: 508px;
+    text-align: center;
+    vertical-align: middle;
+}
+.map {
+    background-image: url("img/map.jpg");
+    width: 1200px;
+    height: 473px;
+}
+.footer {
+    background-image: url("img/map-footer.jpg");
+    width: 1200px;
+    height: 120px;
+}
+
+.options {
+    background-image: url("img/filter-background.jpg");
+    width: 1200px;
+    height: 217px;
+}
+
+.social a {
+    display: inline-block;
+    width: 48px;
+    height: 45px;
+    background-color: #81b3d2;
+}
+
