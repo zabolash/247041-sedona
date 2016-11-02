@@ -2,22 +2,144 @@ body {
     font-size: 1em;
 }
 
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 1200px;
+    height: 56px;
+}
+
+.main-nav {
+    width: 1200px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 240px;
+    text-align: center;
+}
+
+.main-nav a:nth-child(2) {
+    margin-right: 240px;
+}
+
+.logo {
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -69px;
+}
+
 .main-img {
     background-image: url("img/background.jpg");
     width: 1200px;
     height: 508px;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.description {
+    height: 216px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features {
+    display: flex;
+    height: 256px;
+    text-align: center;
+}
+
+.features-blue {
+    background-color: #81b3d2;
+}
+
+.features-grey {
+    background-color: #eeeeee;
+}
+
+.features-grey .features-item {
+    width: 400px;
+}
+
+.advantages {
+    height: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.advantages-item {
+    width: 400px;
+    text-align: center;
+}
+
+.interesting {
+    height: 291px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.interesting-align {
+    flex-basis: 100%;
+    align-self: center;
+}
+
+.search-head {
+    background-color: #766357;
+    width: 568px;
+    height: 86px;
+    align-self: flex-end;
+}
+
 .map {
     background-image: url("img/map.jpg");
     width: 1200px;
     height: 473px;
+    position: relative;
 }
+
+.search {
+    position: absolute;
+    top: 0px;
+    left: 316px;
+    width: 568px;
+    height: 395px;
+    background-color: white;
+}
+
 .footer {
     background-image: url("img/map-footer.jpg");
     width: 1200px;
     height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    width: 156px;
+    justify-content: space-between;
+}
+
+.social a {
+    display: block;
+    width: 48px;
+    height: 45px;
+    background-color: #81b3d2;
 }
 
 .options {
@@ -26,10 +148,6 @@ body {
     height: 217px;
 }
 
-.social a {
-    display: inline-block;
-    width: 48px;
-    height: 45px;
-    background-color: #81b3d2;
+.options form{
+    padding-top: 10px;
 }
-
