@@ -9,12 +9,11 @@ body {
 
 .header {
     width: 1200px;
-    height: 56px;
 }
 
 .main-nav {
+    padding: 19px 0px;
     width: 1200px;
-    height: 56px;
     display: flex;
     align-items: center;
 }
@@ -40,25 +39,23 @@ body {
 
 .main-img {
     background-image: url("img/background.jpg");
-    width: 1200px;
-    height: 508px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 76px 0px;
 }
 
 .description {
-    height: 216px;
+    padding: 58px 0px 57px 0px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .features {
     display: flex;
-    height: 256px;
     text-align: center;
+    align-items: center;
+}
+
+.features img {
+    display: block;
 }
 
 .features-blue {
@@ -71,44 +68,41 @@ body {
 
 .features-grey .features-item {
     width: 400px;
+    padding: 61px 0px;
 }
 
 .advantages {
-    height: 330px;
     display: flex;
     align-items: center;
 }
 
 .advantages-item {
+    padding: 68px 0px 67px 0px;
     width: 400px;
     text-align: center;
 }
 
 .interesting {
-    height: 291px;
+    padding: 40px 0px 0px 0px;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-
-.interesting-align {
-    flex-basis: 100%;
-    align-self: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search-head {
     background-color: #766357;
     width: 568px;
-    height: 86px;
-    align-self: flex-end;
+    padding: 34px 0px;
+    text-align: center;
+    margin-top: 56px;
 }
 
 .map {
-    background-image: url("img/map.jpg");
-    width: 1200px;
-    height: 473px;
     position: relative;
+}
+
+.map img {
+    display: block;
 }
 
 .search {
@@ -116,23 +110,27 @@ body {
     top: 0px;
     left: 316px;
     width: 568px;
-    height: 395px;
     background-color: white;
+    padding: 160px 0px 159px 0px;
 }
 
 .footer {
-    background-image: url("img/map-footer.jpg");
-    width: 1200px;
-    height: 120px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 38px 0px;
+}
+
+.main-footer {
+    background-image: url("img/map-footer.jpg");
+}
+
+.visit {
+    margin: 0px 286px 0px 150px;
 }
 
 .social {
-    display: flex;
     width: 156px;
-    justify-content: space-between;
+    display: flex;
 }
 
 .social a {
@@ -140,14 +138,108 @@ body {
     width: 48px;
     height: 45px;
     background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.htmlacademy {
+    margin-left: 218px;
+}
+
+.htmlacademy a img{
+    vertical-align: middle;
 }
 
 .options {
     background-image: url("img/filter-background.jpg");
-    width: 1200px;
-    height: 217px;
+    padding: 61px 0px;
 }
 
-.options form{
-    padding-top: 10px;
+.options form {
+    display: flex;
+}
+
+.results {
+    display: flex;
+    padding: 34px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.found {
+    margin: 0px 100px 0px 70px;
+}
+
+.sorting-type {
+    margin-right: 530px;
+}
+
+.item {
+    display: flex;
+    padding: 30px 0px 30px 72px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.item-img {
+    margin-right: 30px;
+}
+
+.item-img img {
+    display: block;
+}
+
+.item-info {
+    margin-right: 522px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-info h1 {
+    font-size: 1.1em;
+    margin-top: -3px;
+    margin-bottom: 0px;
+}
+
+.item-info h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.read-more-booking {
+    display: flex;
+}
+
+.read-more {
+    margin-right: 6px;
+}
+
+.read-more a {
+    display: block;
+    width: 100px;
+    background-color: #81b3d2;
+    text-decoration: none;
+    color: white;
+    padding: 4px 0px 5px 10px;
+    margin-top: 18px;
+}
+
+.booking a {
+    display: block;
+    width: 132px;
+    background-color: #766357;
+    text-decoration: none;
+    color: white;
+    padding: 4px 0px 5px 10px;
+    margin-top: 18px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rating span {
+    background-color: #f2f2f2;
+    padding: 4px 10px 5px 10px;
 }
