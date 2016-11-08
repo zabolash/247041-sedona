@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'PT Sans';
-    src: url('fonts/ptsans.woff') format('woff');
+    src: url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
     font-family: 'PT Sans Bold';
-    src: url('fonts/ptsansdold.woff') format('woff');
+    src: url('../fonts/ptsansdold.woff') format('woff');
 }
 
 body {
@@ -54,7 +54,7 @@ body {
 
 .main-img {
     position: relative;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background.jpg");
     text-align: center;
     padding: 76px 0px;
 }
@@ -66,7 +66,7 @@ body {
     bottom: 0px;
     width: 1200px;
     height: 57px;
-    background-image: url("img/pseudo.png");
+    background-image: url("../img/pseudo.png");
 }
 
 .description {
@@ -148,26 +148,23 @@ body {
 .interesting h3 {
     font-size: 30px;
     line-height: 24px;
+    margin-bottom: 15px;
 }
 
 .interesting p {
     line-height: 24px;
+    margin-bottom: 48px;
 }
 
-.search-head {
-    background-color: #766357;
-    width: 568px;
-    padding: 30px 0px;
-    text-align: center;
-    margin-top: 18px;
-}
-
-.search-head a {
+.interesting a {
     text-decoration: none;
     color: white;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    background-color: #766357;
+    width: 568px;
+    padding: 30px 0px;
 }
 
 .map {
@@ -197,7 +194,7 @@ body {
 }
 
 .main-footer {
-    background-image: url("img/map-footer.jpg");
+    background-image: url("../img/map-footer.jpg");
 }
 
 .visit {
@@ -240,7 +237,7 @@ body {
 }
 
 .options {
-    background-image: url("img/filter-background.jpg");
+    background-image: url("../img/filter-background.jpg");
     padding: 67px 0px 66px 0px;
 }
 
@@ -305,23 +302,19 @@ body {
 .item-info {
     margin-right: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .item-info h1 {
     font-size: 1.1em;
     margin-top: -3px;
     margin-bottom: 0px;
+    flex-basis: 100%;
 }
 
 .item-info h1 a {
     text-decoration: none;
     color: black;
-}
-
-.read-more-booking {
-    display: flex;
 }
 
 .read-more {
