@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('fonts/ptsansdold.woff') format('woff');
+}
+
 body {
-    font-size: 1em;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -12,7 +25,8 @@ body {
 }
 
 .main-nav {
-    padding: 19px 0px;
+    font-weight: bold;
+    padding: 17px 0px 18px 0px;
     width: 1200px;
     display: flex;
     align-items: center;
@@ -35,19 +49,39 @@ body {
     top:0;
     left:50%;
     margin-left: -69px;
+    z-index: 1;
 }
 
 .main-img {
+    position: relative;
     background-image: url("img/background.jpg");
     text-align: center;
     padding: 76px 0px;
 }
 
+.main-img::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 1200px;
+    height: 57px;
+    background-image: url("img/pseudo.png");
+}
+
 .description {
-    padding: 58px 0px 57px 0px;
+    padding: 44px 355px;
     text-align: center;
 }
 
+.description h2 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.description p {
+    line-height: 26px;
+}
 .features {
     display: flex;
     text-align: center;
@@ -60,6 +94,21 @@ body {
 
 .features-blue {
     background-color: #81b3d2;
+    color: white;
+}
+
+.features-blue .features-item {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 0px 50px 0px 50px;
+}
+
+.features-blue .features-item2 {
+    padding: 0px 45px 0px 45px;
+}
+
+.features-blue .features-item h2 {
+    padding: 0px 73px 0px 72px;
 }
 
 .features-grey {
@@ -68,7 +117,12 @@ body {
 
 .features-grey .features-item {
     width: 400px;
-    padding: 61px 0px;
+    padding: 44px 70px;
+    box-sizing: border-box;
+}
+
+.features-grey .features-item h2{
+    padding: 0px 75px;
 }
 
 .advantages {
@@ -77,24 +131,43 @@ body {
 }
 
 .advantages-item {
-    padding: 68px 0px 67px 0px;
+    box-sizing: border-box;
+    padding: 69px 58px 68px 58px;
     width: 400px;
     text-align: center;
 }
 
 .interesting {
-    padding: 40px 0px 0px 0px;
+    padding-top: 27px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.interesting h3 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.interesting p {
+    line-height: 24px;
 }
 
 .search-head {
     background-color: #766357;
     width: 568px;
-    padding: 34px 0px;
+    padding: 30px 0px;
     text-align: center;
-    margin-top: 56px;
+    margin-top: 18px;
+}
+
+.search-head a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .map {
@@ -106,12 +179,15 @@ body {
 }
 
 .search {
+    box-sizing: border-box;
     position: absolute;
     top: 0px;
     left: 316px;
     width: 568px;
     background-color: white;
-    padding: 160px 0px 159px 0px;
+    padding: 171px 0px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .footer {
@@ -125,7 +201,15 @@ body {
 }
 
 .visit {
-    margin: 0px 286px 0px 150px;
+    margin: 0px 254px 0px 130px;
+}
+
+.visit a {
+    font-size: 21px;
+    line-height: 26px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .social {
@@ -142,7 +226,13 @@ body {
 }
 
 .htmlacademy {
-    margin-left: 218px;
+    margin-left: 225px;
+}
+
+.htmlacademy a {
+    line-height: 26px;
+    text-decoration: none;
+    color: black;
 }
 
 .htmlacademy a img{
@@ -151,7 +241,7 @@ body {
 
 .options {
     background-image: url("img/filter-background.jpg");
-    padding: 61px 0px;
+    padding: 67px 0px 66px 0px;
 }
 
 .options form {
@@ -160,21 +250,47 @@ body {
 
 .results {
     display: flex;
-    padding: 34px 0px;
+    align-items: center;
+    padding: 30px 72px;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
-    margin: 0px 100px 0px 70px;
+    margin-right: 48px;
+}
+
+.found span {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .sorting-type {
-    margin-right: 530px;
+    margin-right: auto;
 }
+
+.sorting-type {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting-type span {
+    margin-right: 35px;
+}
+
+.sorting-type a {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.sorting-type a:last-child {
+    margin-right: 0px;
+}
+
 
 .item {
     display: flex;
-    padding: 30px 0px 30px 72px;
+    padding: 30px 72px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -187,7 +303,7 @@ body {
 }
 
 .item-info {
-    margin-right: 522px;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
