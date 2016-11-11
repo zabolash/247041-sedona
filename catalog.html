@@ -15,34 +15,39 @@
                 <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo"></a>
             </div>
         </header>
-        <section class="options">
-            <form>
+        
+        <form class="options">
                 <div class="infrastructure">
-                    <h2>Инфрастуктура:</h2>
-                    <label>
-                        <input type="checkbox"> Бассейн</label>
-                    <label>
-                        <input type="checkbox"> Парковка</label>
-                    <label>
-                        <input type="checkbox"> Wi-fi</label>
+                    <h2>Инфраструктура:</h2>
+                    <input type="checkbox" id="pool" checked> <label for="pool">Бассейн</label>
+                    <input type="checkbox" id="parking"> <label for="parking">Парковка</label>
+                    <input type="checkbox" id="wi-fi"> <label for="wi-fi">Wi-fi</label>
                 </div>
+                
                 <div class="type-of-housing">
                     <h2>Тип жилья:</h2>
-                    <label>
-                        <input type="checkbox"> Гостинница</label>
-                    <label>
-                        <input type="checkbox"> Мотель</label>
-                    <label>
-                        <input type="checkbox"> Апартаменты</label>
+                    <input type="checkbox" id="hotel" checked> <label for="hotel">Гостинница</label>
+                    <input type="checkbox" id="motel" checked> <label for="motel">Мотель</label>
+                    <input type="checkbox" id="apartments" checked> <label for="apartments">Апартаменты</label>
                 </div>
-                <div class="cost-per-day">
-                    <h2>Стоимость в сутки (Р):</h2>
-                    <input type="text" value="от 0">
-                    <input type="text" value="до 3000">
-                    <input type="range">
-                    <input type="button" value="Показать"> </div>
-            </form>
-        </section>
+                
+               <div class="filter-range">
+                   <h2>Стоимость в сутки (р):</h2>
+                   <div class="price-controls">
+                       <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                       <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                   </div>
+                   <div class="range-controls">
+                       <div class="scale">
+                           <div class="bar"></div>
+                       </div>
+                       <div class="range-toggle range-toggle-min"></div>
+                       <div class="range-toggle range-toggle-max"></div>
+                   </div>
+                   <button class="btn-transparent" type="submit">Показать</button>
+                </div>
+        </form>
+        
         <section class="results">
             <div class="found"><span>Найдено: 3</span></div>
             <div class="sorting-type"> <span>Сортировка:</span> <a href="#">по цене</a> <a href="#">по типу</a> <a href="#">по рейтингу</a> </div>

@@ -324,19 +324,168 @@ body {
 }
 
 .options {
+    display: flex;
+    color: white;
+    padding: 27px 72px 33px 72px;
     background-image: url("../img/filter-background.jpg");
-    padding: 67px 0px 66px 0px;
 }
 
-.options form {
+.options h2 {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0px;
+}
+
+.infrastructure {
+    margin-right: 120px;
+}
+
+.type-of-housing {
+    margin-right: auto;
+}
+
+.options input[type="checkbox"] {
+    display: none;
+}
+
+.infrastructure label,
+.type-of-housing label {
+    display: block;
+    margin-left: 40px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.options input[type="checkbox"]:not(:checked) + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 26px;
+    height: 22px;
+    background: url("../img/checkbox-empty.png") no-repeat;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 26px;
+    height: 22px;
+    background: url("../img/checkbox-checked.png") no-repeat;
+    cursor: pointer;
+}
+
+.filter-range h2 {
+    margin-bottom: 10px;
+}
+
+.price-controls {
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 314px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 20px;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.price-controls label{
+    text-align: right;
+    width: 157px;
+}
+
+.price-controls input {
+    font: inherit;
+    color: white;
+    border: none;
+    background: none;
+}
+
+.price-controls .min-price input{
+    width: 72px;
+}
+
+.price-controls .max-price input{
+    width: 80px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: white;
+    left: 157px;
+    top: 5px;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
 }
 
 .results {
     display: flex;
     align-items: center;
     padding: 30px 72px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
 }
 
 .found {
