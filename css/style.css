@@ -46,6 +46,26 @@ body {
     margin-right: 240px;
 }
 
+.main-nav a:hover {
+    color: #81b3d2;
+}
+
+.main-nav a:active {
+    color: #b2b2b2;
+}
+
+.main-nav a.active {
+    color: #766357;
+}
+
+.main-nav a.active:hover {
+    color: #604e43;
+}
+
+.main-nav a.active:active {
+    color: #d6d0cc;
+}
+
 .logo {
     position: absolute;
     top:0;
@@ -110,7 +130,7 @@ body {
 }
 
 .features-blue .features-item h2 {
-    padding: 0px 73px 0px 72px;
+    padding: 0px 80px;
 }
 
 .features-grey {
@@ -197,6 +217,16 @@ body {
     text-transform: uppercase;
 }
 
+.search input:not([type="submit"]):hover {
+    background-color: #ebebeb;
+}
+
+.search input:not([type="submit"]):active {
+    background-color: white;
+    outline: 2px solid #e5e5e5;
+    outline-offset: -2px;
+}
+
 .search .date {
     display: flex;
     align-items: center;
@@ -214,6 +244,17 @@ body {
     position: absolute;
     bottom: 8px;
     right: 9px;
+    width: 21px;
+    height: 22px;
+    background-image: url("../img/calendar.png");
+}
+
+.search .date a:hover {
+    background-image: url("../img/calendar-hover.png");
+}
+
+.search .date a:active {
+    background-image: url("../img/calendar-down.png");
 }
 
 .search .people {
@@ -237,12 +278,28 @@ body {
     cursor: pointer;
 }
 
+.search .people .minus:hover {
+    background: #f2f2f2 url("../img/minus-hover.png") no-repeat 50%;
+}
+
+.search .people .minus:active {
+    background: #f2f2f2 url("../img/minus-down.png") no-repeat 50%;
+}
+
 .search .people .plus {
     width: 38px;
     height: 38px;
     border: none;
     background: #f2f2f2 url("../img/plus.png") no-repeat 50%;
     cursor: pointer;
+}
+
+.search .people .plus:hover {
+    background: #f2f2f2 url("../img/plus-hover.png") no-repeat 50%;
+}
+
+.search .people .plus:active {
+    background: #f2f2f2 url("../img/plus-down.png") no-repeat 50%;
 }
 
 .search .people label:nth-of-type(1) {
@@ -263,10 +320,19 @@ body {
     color: white;
 }
 
+.search input[type="submit"]:hover {
+    background-color: #669ec0;
+}
+
+.search input[type="submit"]:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
 .footer {
     display: flex;
     align-items: center;
-    padding: 38px 0px;
+    padding: 36px 103px 36px 133px;
 }
 
 .main-footer {
@@ -274,7 +340,7 @@ body {
 }
 
 .visit {
-    margin: 0px 254px 0px 130px;
+    margin-right: 256px;
 }
 
 .visit a {
@@ -288,12 +354,13 @@ body {
 .social {
     width: 156px;
     display: flex;
+    margin-right: auto;
 }
 
 .social a {
     display: block;
-    width: 48px;
-    height: 45px;
+    width: 46px;
+    height: 48px;
     margin-right: 6px;
 }
 
@@ -307,21 +374,47 @@ body {
 
 .social a:nth-child(3) {
     background: #81b3d2 url("../img/youtube.png") no-repeat 50%;
+    margin-right: 0px;
 }
 
-.htmlacademy {
-    margin-left: 225px;
+.social a:hover {
+    background-color: #669ec0;
 }
 
-.htmlacademy a {
-    line-height: 26px;
+.social a:nth-child(1):active {
+    background: #5496bd url("../img/twitter-down.png") no-repeat 50%;
+}
+
+.social a:nth-child(2):active {
+    background: #5496bd url("../img/facebook-down.png") no-repeat 50%;
+}
+
+.social a:nth-child(3):active {
+    background: #5496bd url("../img/youtube-down.png") no-repeat 50%;
+}
+
+.ha-logo {
+    display: block;
+    width: 194px;
+    height: 39px;
+    line-height: 39px;
+    vertical-align: middle;
     text-decoration: none;
     color: black;
+    background: url("../img/ha-logo.png") no-repeat 100%;
 }
 
-.htmlacademy a img{
-    vertical-align: middle;
+.ha-logo:hover {
+    background: url("../img/ha-logo-hover.png") no-repeat 100%;
 }
+
+.ha-logo:active {
+    background: url("../img/ha-logo-down.png") no-repeat 100%;
+}
+
+
+/*catalog.html*/
+
 
 .options {
     display: flex;
@@ -356,24 +449,29 @@ body {
     position: relative;
 }
 
-.options input[type="checkbox"]:not(:checked) + label::before {
+.options input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
     left: -40px;
     width: 26px;
     height: 22px;
-    background: url("../img/checkbox-empty.png") no-repeat;
     cursor: pointer;
 }
 
-.options input[type="checkbox"]:checked + label::before {
-    content: "";
-    position: absolute;
-    left: -40px;
-    width: 26px;
-    height: 22px;
+.options input[type="checkbox"]:not(:checked):enabled + label::before {
+    background: url("../img/checkbox-empty.png") no-repeat;
+}
+
+.options input[type="checkbox"]:checked:enabled + label::before {
     background: url("../img/checkbox-checked.png") no-repeat;
-    cursor: pointer;
+}
+
+.options input[type="checkbox"]:not(:checked):disabled + label::before {
+    background: url("../img/checkbox-empty-disabled.png") no-repeat;
+}
+
+.options input[type="checkbox"]:checked:disabled + label::before {
+    background: url("../img/checkbox-checked-disabled.png") no-repeat;
 }
 
 .filter-range h2 {
@@ -485,7 +583,7 @@ body {
     display: flex;
     align-items: center;
     padding: 30px 72px;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
@@ -500,9 +598,6 @@ body {
 
 .sorting-type {
     margin-right: auto;
-}
-
-.sorting-type {
     font-size: 12px;
     line-height: 18px;
 }
@@ -514,12 +609,67 @@ body {
 .sorting-type a {
     text-decoration: none;
     margin-right: 30px;
+    color: #b2b2b2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-type a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-type a:active {
+    color: black;
+    border: none;
+}
+
+.sorting-type a.active {
+    color: #81b3d2;
+    border: none;
 }
 
 .sorting-type a:last-child {
     margin-right: 0px;
 }
 
+.results > a {
+    display: block;
+    width: 11px;
+    height: 11px;
+}
+
+.results .up {
+    margin-right: 12px;
+    background: url("../img/arrow-up-grey.png") no-repeat 100%;
+}
+
+.results .up:hover {
+    background: url("../img/arrow-up-black.png") no-repeat 100%;
+}
+
+.results .up:active {
+    background: url("../img/arrow-up-blue.png") no-repeat 100%;
+}
+
+.results .up.active {
+    background: url("../img/arrow-up-blue.png") no-repeat 100%;
+}
+
+.results .down {
+    background: url("../img/arrow-down-grey.png") no-repeat;
+}
+
+.results .down:hover {
+    background: url("../img/arrow-down-black.png") no-repeat;
+}
+
+.results .down:active {
+    background: url("../img/arrow-down-blue.png") no-repeat;
+}
+
+.results .down.active {
+    background: url("../img/arrow-down-blue.png") no-repeat;
+}
 
 .item {
     display: flex;
@@ -542,9 +692,8 @@ body {
 }
 
 .item-info h1 {
-    font-size: 1.1em;
-    margin-top: -3px;
-    margin-bottom: 0px;
+    font-size: 21px;
+    margin: -3px 0px auto 0px;
     flex-basis: 100%;
 }
 
@@ -553,28 +702,60 @@ body {
     color: black;
 }
 
+.item-info h1 a:hover {
+    color: #81b3d2;
+}
+
+.item-info h1 a:active {
+    color: #cacaca;
+}
+
 .read-more {
     margin-right: 6px;
+    align-self: flex-end;
 }
 
 .read-more a {
     display: block;
-    width: 100px;
+    width: 95px;
     background-color: #81b3d2;
     text-decoration: none;
     color: white;
-    padding: 4px 0px 5px 10px;
-    margin-top: 18px;
+    padding: 3px 0px 3px 15px;
+    margin-top: 15px;
+}
+
+.read-more a:hover {
+    background-color: #669ec0;
+}
+
+.read-more a:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
+.booking {
+    align-self: flex-end;
 }
 
 .booking a {
     display: block;
-    width: 132px;
+    width: 127px;
     background-color: #766357;
     text-decoration: none;
     color: white;
-    padding: 4px 0px 5px 10px;
-    margin-top: 18px;
+    padding: 3px 0px 3px 15px;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.booking a:hover {
+    background-color: #604e43;
+}
+
+.booking a:active {
+    color: #857871;
+    background-color: #503e33;
 }
 
 .rating {
@@ -586,5 +767,5 @@ body {
 
 .rating span {
     background-color: #f2f2f2;
-    padding: 4px 10px 5px 10px;
+    padding: 3px 15px 3px 15px;
 }

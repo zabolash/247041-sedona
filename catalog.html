@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav class="main-nav"> <a href="#">Информация</a> <a href="#">Фото и видео</a> <a href="#">Карта штата</a> <a href="catalog.html">Гостиницы</a> </nav>
+            <nav class="main-nav"> <a href="#">Информация</a> <a href="#">Фото и видео</a> <a href="#">Карта штата</a> <a class="active" href="catalog.html">Гостиницы</a> </nav>
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo"></a>
             </div>
@@ -50,11 +50,9 @@
         
         <section class="results">
             <div class="found"><span>Найдено: 3</span></div>
-            <div class="sorting-type"> <span>Сортировка:</span> <a href="#">по цене</a> <a href="#">по типу</a> <a href="#">по рейтингу</a> </div>
-            <div class="sorting-order">
-                <a href="#"><img src="img/up.png" width="11" height="10" alt="up"></a>
-                <a href="#"><img src="img/down.png" width="11" height="10" alt="down"></a>
-            </div>
+            <div class="sorting-type"> <span>Сортировка:</span> <a class="active" href="#">по цене</a> <a href="#">по типу</a> <a href="#">по рейтингу</a> </div>            
+            <a class="up" href="#"></a>
+            <a class="down active" href="#"></a>
         </section>
         
         <article class="item">
@@ -94,7 +92,7 @@
                 <a href="#"></a>
                 <a href="#"></a>
             </div>
-            <div class="htmlacademy"> <a href="#">Website by <img src="img/halogo.png" width="113" height="39" alt="htmlacademy logo"></a> </div>
+            <a class="ha-logo" href="#">Website by</a>
         </footer>
     </div>
 </body>
