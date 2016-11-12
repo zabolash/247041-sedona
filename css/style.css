@@ -221,7 +221,7 @@ body {
     background-color: #ebebeb;
 }
 
-.search input:not([type="submit"]):active {
+.search input:not([type="submit"]):focus {
     background-color: white;
     outline: 2px solid #e5e5e5;
     outline-offset: -2px;
@@ -246,15 +246,15 @@ body {
     right: 9px;
     width: 21px;
     height: 22px;
-    background-image: url("../img/calendar.png");
+    background: url("../img/spritesheet.png") no-repeat -131px -5px;
 }
 
 .search .date a:hover {
-    background-image: url("../img/calendar-hover.png");
+    background: url("../img/spritesheet.png") no-repeat -193px -5px;
 }
 
 .search .date a:active {
-    background-image: url("../img/calendar-down.png");
+    background: url("../img/spritesheet.png") no-repeat -162px -5px;
 }
 
 .search .people {
@@ -274,32 +274,32 @@ body {
     width: 38px;
     height: 38px;
     border: none;
-    background: #f2f2f2 url("../img/minus.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -217px -37px;
     cursor: pointer;
 }
 
 .search .people .minus:hover {
-    background: #f2f2f2 url("../img/minus-hover.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -209px -133px;
 }
 
 .search .people .minus:active {
-    background: #f2f2f2 url("../img/minus-down.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -217px -85px;
 }
 
 .search .people .plus {
     width: 38px;
     height: 38px;
     border: none;
-    background: #f2f2f2 url("../img/plus.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -209px -181px;
     cursor: pointer;
 }
 
 .search .people .plus:hover {
-    background: #f2f2f2 url("../img/plus-hover.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -265px -53px;
 }
 
 .search .people .plus:active {
-    background: #f2f2f2 url("../img/plus-down.png") no-repeat 50%;
+    background: #f2f2f2 url("../img/spritesheet.png") no-repeat -265px -5px;
 }
 
 .search .people label:nth-of-type(1) {
@@ -365,15 +365,15 @@ body {
 }
 
 .social a:nth-child(1) {
-    background: #81b3d2 url("../img/twitter.png") no-repeat 50%;
+    background: #81b3d2 url("../img/spritesheet.png") no-repeat -265px -101px;
 }
 
 .social a:nth-child(2) {
-    background: #81b3d2 url("../img/facebook.png") no-repeat 50%;
+    background: #81b3d2 url("../img/spritesheet.png") no-repeat -105px -37px;
 }
 
 .social a:nth-child(3) {
-    background: #81b3d2 url("../img/youtube.png") no-repeat 50%;
+    background: #81b3d2 url("../img/spritesheet.png") no-repeat -257px -217px;
     margin-right: 0px;
 }
 
@@ -382,15 +382,15 @@ body {
 }
 
 .social a:nth-child(1):active {
-    background: #5496bd url("../img/twitter-down.png") no-repeat 50%;
+    background: #5496bd url("../img/spritesheet.png") no-repeat -257px -159px;
 }
 
 .social a:nth-child(2):active {
-    background: #5496bd url("../img/facebook-down.png") no-repeat 50%;
+    background: #5496bd url("../img/spritesheet.png") no-repeat -161px -37px;
 }
 
 .social a:nth-child(3):active {
-    background: #5496bd url("../img/youtube-down.png") no-repeat 50%;
+    background: #5496bd url("../img/spritesheet.png") no-repeat -313px -5px;
 }
 
 .ha-logo {
@@ -401,15 +401,15 @@ body {
     vertical-align: middle;
     text-decoration: none;
     color: black;
-    background: url("../img/ha-logo.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -5px -95px;
 }
 
 .ha-logo:hover {
-    background: url("../img/ha-logo-hover.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -5px -193px;
 }
 
 .ha-logo:active {
-    background: url("../img/ha-logo-down.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -5px -144px;
 }
 
 
@@ -459,19 +459,19 @@ body {
 }
 
 .options input[type="checkbox"]:not(:checked):enabled + label::before {
-    background: url("../img/checkbox-empty.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -41px -37px;
 }
 
 .options input[type="checkbox"]:checked:enabled + label::before {
-    background: url("../img/checkbox-checked.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -224px -5px;
 }
 
 .options input[type="checkbox"]:not(:checked):disabled + label::before {
-    background: url("../img/checkbox-empty-disabled.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -73px -37px;
 }
 
 .options input[type="checkbox"]:checked:disabled + label::before {
-    background: url("../img/checkbox-checked-disabled.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -5px -37px;
 }
 
 .filter-range h2 {
@@ -640,35 +640,35 @@ body {
 
 .results .up {
     margin-right: 12px;
-    background: url("../img/arrow-up-grey.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -110px -5px;
 }
 
 .results .up:hover {
-    background: url("../img/arrow-up-black.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -68px -5px;
 }
 
 .results .up:active {
-    background: url("../img/arrow-up-blue.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -89px -5px;
 }
 
 .results .up.active {
-    background: url("../img/arrow-up-blue.png") no-repeat 100%;
+    background: url("../img/spritesheet.png") no-repeat -89px -5px;
 }
 
 .results .down {
-    background: url("../img/arrow-down-grey.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -47px -5px;
 }
 
 .results .down:hover {
-    background: url("../img/arrow-down-black.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -5px -5px;
 }
 
 .results .down:active {
-    background: url("../img/arrow-down-blue.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -26px -5px;
 }
 
 .results .down.active {
-    background: url("../img/arrow-down-blue.png") no-repeat;
+    background: url("../img/spritesheet.png") no-repeat -26px -5px;
 }
 
 .item {
