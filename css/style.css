@@ -1,19 +1,24 @@
 @font-face {
-    font-family: 'PT Sans';
-    src: url('../fonts/ptsans.woff') format('woff');
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'PT Sans Bold';
-    src: url('../fonts/ptsansdold.woff') format('woff');
+    font-family: "PT Sans Bold";
+    src: url("../fonts/ptsansdold.woff") format("woff");
 }
 
 body {
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
     background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -73,8 +78,8 @@ body {
 
 .logo {
     position: absolute;
-    top:0;
-    left:50%;
+    top: 0;
+    left: 50%;
     margin-left: -69px;
     z-index: 1;
 }
@@ -111,6 +116,7 @@ body {
 .description p {
     line-height: 26px;
 }
+
 .features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -405,7 +411,7 @@ body {
     height: 58px;
     background-color: #81b3d2;
     cursor: pointer;
-    font: bold 21px/26px 'PT Sans', Arial, sans-serif;
+    font: bold 21px/26px "PT Sans", Arial, sans-serif;
     color: white;
 }
 
@@ -515,7 +521,6 @@ body {
 
 /*catalog.html*/
 
-
 .options {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -594,7 +599,7 @@ input[type="checkbox"]:checked:disabled + label::before {
     align-items: center;
 }
 
-.price-controls label{
+.price-controls label {
     display: block;
     text-align: right;
     width: 157px;
@@ -607,11 +612,11 @@ input[type="checkbox"]:checked:disabled + label::before {
     background: none;
 }
 
-.min-price input{
+.min-price input {
     width: 72px;
 }
 
-.max-price input{
+.max-price input {
     width: 80px;
 }
 
